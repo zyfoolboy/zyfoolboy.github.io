@@ -20,7 +20,7 @@
 里面写改变选中状态cell的界面
 在tableview的delegate方法
 - (void)tableView:(UITableVie">
-<meta property="og:updated_time" content="2016-10-02T06:00:17.000Z">
+<meta property="og:updated_time" content="2016-10-02T06:01:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TableView 常用方法小结">
 <meta name="twitter:description" content="###1.设置cell选择状态的界面在tableview的delegate方法
@@ -171,6 +171,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:YES scrollPosition:UITableViewScrollPositionNone];</div><div class="line">[self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:0]];</div></pre></td></tr></table></figure>
 <p>第一行代码使tableView的第一行的选中背景显示出来但是没有1中的第一句代码的效果(第二句代码可以加上这种效果)</p>
 <hr>
+<a id="more"></a>
 <p>###3.设置cell的分割线左边顶到tableview最左边<br>初始化tableview的时候先写上这些代码</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">if ([_leftTableView respondsToSelector:@selector(setSeparatorInset:)]) &#123;</div><div class="line">            [_leftTableView setSeparatorInset:UIEdgeInsetsZero];</div><div class="line">        &#125;</div><div class="line">if ([_leftTableView respondsToSelector:@selector(setLayoutMargins:)]) &#123;</div><div class="line">            [_leftTableView setLayoutMargins:UIEdgeInsetsZero];</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
 <p>然后再在tableView的delegate方法中这样写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath &#123;</div><div class="line">    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) &#123;</div><div class="line">        [cell setSeparatorInset:UIEdgeInsetsZero];</div><div class="line">    &#125;</div><div class="line">    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) &#123;</div><div class="line">        [cell setLayoutMargins:UIEdgeInsetsZero];</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
