@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>zyfoolboy</title>
-  <subtitle>宠辱不惊，看庭前花开花落；去留无意，望天空云卷云舒。</subtitle>
+  <subtitle>宠辱不惊，看庭前花开花落；&lt;br/&gt;去留无意，望天空云卷云舒。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zyfoolboy.github.io/"/>
