@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>zyfoolboy</title>
-  
+  <subtitle>宠辱不惊，看庭前花开花落；去留无意，望天空云卷云舒。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zyfoolboy.github.io/"/>
-  <updated>2016-10-05T14:37:41.000Z</updated>
+  <updated>2016-10-06T02:07:44.000Z</updated>
   <id>https://zyfoolboy.github.io/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自酿酸奶</title>
+    <link href="https://zyfoolboy.github.io/2016/10/06/%E8%87%AA%E9%85%BF%E9%85%B8%E5%A5%B6/"/>
+    <id>https://zyfoolboy.github.io/2016/10/06/自酿酸奶/</id>
+    <published>2016-10-06T02:07:02.000Z</published>
+    <updated>2016-10-06T02:07:44.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="生活" scheme="https://zyfoolboy.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="美食" scheme="https://zyfoolboy.github.io/tags/%E7%BE%8E%E9%A3%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>TableView 常用方法小结</title>
